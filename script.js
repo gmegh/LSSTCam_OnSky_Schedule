@@ -32,7 +32,7 @@ const timeScale = d3.scaleLinear()
     .range([0, width]);
 
 // y-axis
-let dateStart = new Date("2025-04-18");
+let dateStart = new Date("2025-04-14");
 let dateEnd = new Date("2025-06-01");
 let dateRange = d3.timeDay.range(dateStart, dateEnd);
 let dates = dateRange.map(d => d.toISOString().split("T")[0]);
