@@ -25,7 +25,7 @@ const g = svg.append("g")
 // x-axis
 //  Time range for x-axis.  12:00 to 08:30
 //  Use seconds from midnight.
-const minTime = -12*3600;
+const minTime = -6.5*3600;
 const maxTime = 8.5*3600;
 const timeScale = d3.scaleLinear()
     .domain([minTime, maxTime])
@@ -72,8 +72,12 @@ const obstypes = {
         "tooltip": "Get Ready",
         "category": "Prep",
     },
-    "Point": {
+    "Pointing": {
         "tooltip": "Pointing model",
+        "category": "Prep",
+    },
+    "Rotator": {
+        "tooltip": "Rotator tracking",
         "category": "Prep",
     },
     "Trail": {
